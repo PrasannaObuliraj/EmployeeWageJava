@@ -4,10 +4,17 @@ public class EmployeeWage
 	{
 		System.out.println("Welcome to employee wage problem");
 		int fullTime=1;
+		int empHrs=0;
+		int empWage=0;
+		int wagePerHour=20;
+
 		int randomCheck=(int) (Math.random()*10)%2;
+
 		if(randomCheck==fullTime)
-			System.out.println("Employee is present");
-		else
-			System.out.println("Employee is absent");
+		{
+			empHrs=8;
+		}
+		empWage=wagePerHour*empHrs;
+		System.out.println("Employee daily wage:" + empWage);
 	}
 }
