@@ -22,6 +22,8 @@ public class EmployeeWage
 				case PART_TIME:
 					empHrs=4;
 					break;
+				default:
+					empHrs=0;
 			}
 			empWage=EMP_RATE_PER_HOUR*empHrs;
 			System.out.println("Employee daily wage:" + empWage);
